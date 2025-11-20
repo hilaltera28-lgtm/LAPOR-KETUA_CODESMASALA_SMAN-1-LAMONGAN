@@ -193,7 +193,7 @@ def main_menu():
         print("\033[34m" + ascii_banner + "\033[0m")
         print("\033[34m" + "================================================================================================ " + "\033[0m")
         print("1. Siswa - Laporkan Masalah")
-        print("2. Admin - Lapor Ketua")
+        print("2. Admin - Pengatur Data")
         print("3. Keluar")
         pilih = input("Pilih menu: ")
 
@@ -205,6 +205,7 @@ def main_menu():
                 menu_admin()
             else:
                 print("Password salah! Tidak bisa masuk ke menu admin.")
+                input("\nTekan Enter untuk keluar...")
         elif pilih == "3":
             print("Program selesai.")
             break
@@ -216,4 +217,5 @@ def main_menu():
 
 # Jalankan program
 main_menu()
+
 
