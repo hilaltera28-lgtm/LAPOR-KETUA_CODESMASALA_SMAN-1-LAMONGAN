@@ -205,7 +205,7 @@ def main_menu():
                 menu_admin()
             else:
                 print("Password salah! Tidak bisa masuk ke menu admin.")
-                input("\nTekan Enter untuk keluar...")
+                input("Tekan Enter untuk kembali ke menu...")
         elif pilih == "3":
             print("Program selesai.")
             break
@@ -217,5 +217,6 @@ def main_menu():
 
 # Jalankan program
 main_menu()
+
 
 
