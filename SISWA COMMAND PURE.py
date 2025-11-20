@@ -200,7 +200,11 @@ def main_menu():
         if pilih == "1":
             menu_siswa()
         elif pilih == "2":
-            menu_admin()
+            password = input("Masukkan password admin: ")
+            if password == "SMASALAJUARA":
+                menu_admin()
+            else:
+                print("Password salah! Tidak bisa masuk ke menu admin.")
         elif pilih == "3":
             print("Program selesai.")
             break
@@ -212,3 +216,4 @@ def main_menu():
 
 # Jalankan program
 main_menu()
+
